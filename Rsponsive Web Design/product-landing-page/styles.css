@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+#header-img {
+  height: 50px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 100px 20px;
+  margin-top: 70px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+input[type="email"], input[type="submit"] {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+  }
+  #nav-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

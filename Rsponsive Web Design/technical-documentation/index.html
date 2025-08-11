@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>JavaScript Documentation</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Variables" class="nav-link">Variables</a>
+    <a href="#Functions" class="nav-link">Functions</a>
+    <a href="#Loops" class="nav-link">Loops</a>
+    <a href="#Objects" class="nav-link">Objects</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a versatile programming language used for web development.</p>
+      <p>It can run in the browser and on the server using Node.js.</p>
+      <p>It allows you to make interactive and dynamic websites.</p>
+      <p>JavaScript was created in 1995 by Brendan Eich.</p>
+      <p>It is one of the core technologies of the web, alongside HTML and CSS.</p>
+      <p>You can write JavaScript in plain text files with a .js extension.</p>
+      <p>JavaScript supports object-oriented, functional, and event-driven styles.</p>
+      <p>It can manipulate the DOM to update HTML and CSS dynamically.</p>
+      <p>Modern JavaScript supports ES6+ features such as arrow functions.</p>
+      <p>It has a large ecosystem with many libraries and frameworks.</p>
+      <code>console.log("Hello World");</code>
+      <code>let x = 5;</code>
+      <code>document.getElementById("demo").innerHTML = "Hello";</code>
+      <code>if(x > 2){ alert(x); }</code>
+      <code>function greet(){ return "Hi"; }</code>
+      <ul>
+        <li>Easy to learn</li>
+        <li>Runs everywhere</li>
+        <li>Supports many paradigms</li>
+        <li>Huge community</li>
+        <li>Free and open-source</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables store data values.</p>
+      <p>JavaScript uses var, let, and const to declare variables.</p>
+      <p>let and const are block-scoped.</p>
+      <p>const values cannot be reassigned.</p>
+      <p>Variables can store numbers, strings, objects, arrays, etc.</p>
+      <p>Variable names must follow identifier rules.</p>
+      <p>let is preferred over var for most use cases.</p>
+      <p>const is used for constants or references that don't change.</p>
+      <p>Variables can be declared without a value.</p>
+      <p>Unassigned variables have the value undefined.</p>
+      <code>let name = "John";</code>
+      <code>const pi = 3.14;</code>
+      <code>var age = 25;</code>
+      <code>let x;</code>
+      <code>const colors = ["red","blue"];</code>
+      <ul>
+        <li>var (function scope)</li>
+        <li>let (block scope)</li>
+        <li>const (block scope)</li>
+        <li>camelCase naming</li>
+        <li>use descriptive names</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are reusable blocks of code.</p>
+      <p>They can take parameters and return values.</p>
+      <p>Declared using the function keyword or arrow syntax.</p>
+      <p>Functions can be assigned to variables.</p>
+      <p>They can be passed as arguments to other functions.</p>
+      <p>Functions can be anonymous.</p>
+      <p>Arrow functions are shorter syntax.</p>
+      <p>Functions can return other functions.</p>
+      <p>Default parameters can be set.</p>
+      <p>Rest parameters gather arguments.</p>
+      <code>function greet(name){ return "Hello " + name; }</code>
+      <code>const sum = (a,b) => a+b;</code>
+      <code>let sayHi = function(){ console.log("Hi"); }</code>
+      <code>(function(){ console.log("IIFE"); })();</code>
+      <code>function multiply(...nums){ return nums.reduce((a,b)=>a*b); }</code>
+      <ul>
+        <li>Reusable</li>
+        <li>Organize code</li>
+        <li>Arrow syntax</li>
+        <li>Anonymous functions</li>
+        <li>Closures</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops execute code repeatedly.</p>
+      <p>JavaScript supports for, while, do...while loops.</p>
+      <p>Loops can iterate over arrays.</p>
+      <p>for...of is for iterable objects.</p>
+      <p>for...in is for object properties.</p>
+      <p>break exits a loop early.</p>
+      <p>continue skips to the next iteration.</p>
+      <p>Loops can be nested.</p>
+      <p>Array methods like forEach() act as loops.</p>
+      <p>Loops are essential for repetitive tasks.</p>
+      <code>for(let i=0;i<5;i++){ console.log(i); }</code>
+      <code>while(x<10){ x++; }</code>
+      <code>do{ x--; }while(x>0);</code>
+      <code>for(let item of arr){ console.log(item); }</code>
+      <code>for(let key in obj){ console.log(obj[key]); }</code>
+      <ul>
+        <li>for loop</li>
+        <li>while loop</li>
+        <li>do...while loop</li>
+        <li>for...of loop</li>
+        <li>for...in loop</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Objects">
+      <header>Objects</header>
+      <p>Objects store key-value pairs.</p>
+      <p>They can hold any data type as values.</p>
+      <p>Properties can be added or removed.</p>
+      <p>Methods are functions inside objects.</p>
+      <p>Objects can be nested.</p>
+      <p>Use dot or bracket notation to access properties.</p>
+      <p>Objects can be created with literals or constructors.</p>
+      <p>JSON is a text format for objects.</p>
+      <p>Objects are passed by reference.</p>
+      <p>They are central to JavaScript programming.</p>
+      <code>let person = {name:"John", age:30};</code>
+      <code>person.name;</code>
+      <code>person["age"];</code>
+      <code>person.job = "Developer";</code>
+      <code>delete person.age;</code>
+      <ul>
+        <li>Properties</li>
+        <li>Methods</li>
+        <li>Dot notation</li>
+        <li>Bracket notation</li>
+        <li>JSON</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
